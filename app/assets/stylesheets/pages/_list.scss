@@ -30,39 +30,38 @@
     margin-bottom: 50px;
   }
 
+  .movie-lists-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .movie-lists-btn {
-    margin-bottom: 25px;
+    margin-bottom: 50px;
   }
 
   .movie-lists-btn a {
     color: black;
     font-weight: bold;
     margin-right: 15px;
+    text-decoration: none;
   }
 
   .movie-lists-btn a:hover {
     color: rgb(222, 27, 27);
   }
 
-  .movie-list {
-    display: flex;
-    flex-wrap: wrap;
-
-    justify-content: center;
-  }
-
   .movie {
-    width: 47%;
-    height: 400px;
     margin-bottom: 20px;
     margin-right: 20px;
 
+    overflow: hidden;
     // display: flex;
     // flex-direction: column;
     // justify-content: center;
 
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
   }
+
 
   .movie-img img {
     object-fit: cover;
