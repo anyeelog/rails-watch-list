@@ -1,5 +1,5 @@
 .hero-list {
-  background-image: url('bg-img-2.jpg');
+  // background-image: url('bg-img-2.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -12,8 +12,8 @@
   align-items: center;
   justify-content: center;
 
-  h1, p {
-    color: black;
+  h1 {
+    color: white;
     font-weight: bold;
     text-align: center;
   }
