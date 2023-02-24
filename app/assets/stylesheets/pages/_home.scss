@@ -1,1 +1,65 @@
 // Specific CSS for your home-page
+
+.hero {
+  background-image: url('wallpaper.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 40vw;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h1, p {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .hero-info {
+    width: 40%;
+  }
+}
+
+.lists {
+  padding: 100px;
+
+  h2 {
+    margin-bottom: 50px;
+  }
+
+  h3 {
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .category-lists {
+    display: flex;
+  }
+
+  .list-category {
+    background-image: url('bg-img.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 300px;
+    height: 200px;
+    margin-right: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border-radius: 25px;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}

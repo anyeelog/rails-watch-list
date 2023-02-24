@@ -1,0 +1,77 @@
+.hero-list {
+  background-image: url('bg-img-2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 20vw;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h1, p {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .hero-list-info {
+    width: 40%;
+  }
+}
+
+.movie-lists {
+  padding: 100px;
+
+  h2 {
+    margin-bottom: 50px;
+  }
+
+  .movie-lists-btn {
+    margin-bottom: 25px;
+  }
+
+  .movie-lists-btn a {
+    color: black;
+    font-weight: bold;
+    margin-right: 15px;
+  }
+
+  .movie-lists-btn a:hover {
+    color: rgb(222, 27, 27);
+  }
+
+  .movie-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+  }
+
+  .movie {
+    width: 47%;
+    height: 400px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+  }
+
+  .movie-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+  }
+
+  .movie-info {
+    margin-top: 20px;
+    padding: 20px;
+  }
+}

@@ -11,6 +11,19 @@
   </head>
 
   <body>
+    <header>
+      <div class="header_logo"><%= image_tag "logo.png", alt: "web logo", width: 50 %> Phoenix movies</p></div>
+
+      <div class="header_links">
+        <%= link_to "My lists", lists_path(@lists) %>
+        <%= link_to "New list", new_list_path(@list) %>
+      </div>
+    </header>
+
     <%= yield %>
+
+    <footer>
+      Phoenix Movies © 2023. All rights reserved
+    </footer>
   </body>
 </html>

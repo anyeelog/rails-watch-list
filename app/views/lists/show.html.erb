@@ -1,0 +1,35 @@
+<div class="hero-list">
+  <div class="hero-list-info">
+    <h1><%= @list.name %></h1>
+  </div>
+</div>
+
+<div class="container">
+  <div class="movie-lists">
+    <div class="movie-lists-btn">
+      <%= link_to "Add a movie", new_list_bookmark_path(@list) %>
+      <%= link_to "Edit list", edit_list_path(@list) %>
+    </div>
+
+    <h2>My movies</h2>
+      <div class="movie-list">
+        <% @list.bookmarks.each do |bookmark| %>
+          <div class="movie">
+            <div class="movie-img">
+              <%= image_tag bookmark.movie.poster_url, alt: "Movie poster", width: 200 %>
+            </div>
+
+            <div class="movie-info">
+              <h3><%= bookmark.movie.title %></h3>
+              <p><%= bookmark.movie.overview %></p>
+
+
+              <div class="movie-comment">
+                <p><i class="fa-solid fa-square-quote"></i> <%= bookmark.comment %></p>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="hero">
+  <div class="hero-info">
+    <h1>Save any kind of movies</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam repellat laudantium aperiam ea quasi a consequuntur earum, qui fugiat.</p>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="lists">
+    <h2>My lists</h2>
+      <div class="category-lists">
+        <% @lists.each do |list| %>
+          <div class="list-category">
+            <div class="list-info">
+              <h3><%= link_to list.name, list_path(list) %></h3>
+            </div>
+          </div>
+        <% end %>
+      </div>
+  </div>
+</div>
