@@ -1,0 +1,21 @@
+.form-container {
+  margin: 100px 0;
+}
+
+.form-header {
+  margin-bottom: 50px;
+}
+
+.form-body {
+  label {
+    font-weight: bold;
+  }
+
+  input[type=submit] {
+    margin-top: 25px;
+    background-color: rgb(222, 27, 27);
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+  }
+}

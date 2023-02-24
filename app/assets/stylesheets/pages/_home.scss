@@ -26,7 +26,7 @@
 }
 
 .lists {
-  padding: 100px;
+  margin: 100px 0;
 
   h2 {
     margin-bottom: 50px;
@@ -50,6 +50,10 @@
     font-weight: bold;
     color: white;
     height: fit-content;
+  }
+
+  .lists-header a:hover {
+    background-color: rgb(132, 2, 2)
   }
 
   .list-category {
